@@ -53,13 +53,11 @@ describe('sgUtils', function() {
   describe('.sgNavigationTree', function() {
     it('Picks navigation tree only from styleguide', function() {
       var navigation = sgUtils.sgNavigationTree(sg)
-      console.log(navigation)
       assert.equal(navigation.foo, undefined);
       assert.equal(navigation.sections[0].header, 'Components');
       assert.equal(navigation.sections[0].reference, '1');
       assert.equal(navigation.sections[0].parentReference, undefined);
       assert.equal(navigation.sections[0].depth, 0);
-
       assert.equal(navigation.sections[0].subItems[0].header, 'Component');
       assert.equal(navigation.sections[0].subItems[0].reference, '1.1');
       assert.equal(navigation.sections[0].subItems[0].parentReference, '1');
@@ -67,6 +65,4 @@ describe('sgUtils', function() {
       assert.equal(navigation.sections[0].subItems[0].foo, undefined);
     });
   });
-
-
 });
