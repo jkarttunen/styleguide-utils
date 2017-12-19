@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jkarttunen/styleguide-utils.svg?branch=master)](https://travis-ci.org/jkarttunen/styleguide-utils)
+
 # Styleguide-utils
 
 I needed some util functions for manipulating styleguide object created by SC5 styleguide generator. This propably is compatible with KSS generated json files too.
